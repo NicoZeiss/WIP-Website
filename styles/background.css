@@ -1,0 +1,19 @@
+.background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.background img {
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+.background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-dark);
+  mix-blend-mode: hard-light;
+}

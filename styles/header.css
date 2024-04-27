@@ -1,0 +1,63 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: var(--header-height);
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+header .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  color: white;
+  transition: .4s;
+}
+
+header .logo span {
+  color: var(--color-primary);
+}
+
+header .media {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+
+header .media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .media ion-icon {
+  color: white;
+  font-size: 2rem;
+  transition: .2s;
+}
+
+header li:hover ion-icon {
+  color: var(--color-primary);
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px 30px;
+  }
+
+  header .logo {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+  }
+
+  header .media {
+    gap: 20px;
+  }
+
+  header .media ion-icon {
+    font-size: 1.6rem;
+  }
+}
